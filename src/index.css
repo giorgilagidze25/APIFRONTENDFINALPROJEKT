@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Custom styles can be added here */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Text color utilities for consistency */
+.text-primary {
+  color: #1e293b;
+}
+
+.text-secondary {
+  color: #475569;
+}
+
+.text-muted {
+  color: #64748b;
+}
+
+.text-accent {
+  background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
