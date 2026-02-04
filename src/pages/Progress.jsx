@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://aifinalprojekt.vercel.app/api';
 
 const colorMap = {
   blue: { bg: 'bg-blue-100', text: 'text-blue-800', bar: 'bg-blue-500' },
